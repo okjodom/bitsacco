@@ -149,10 +149,9 @@ export const authConfig: NextAuthConfig = {
           const response = await apiClient.auth.login(loginRequest);
 
           if (response.data) {
-            // Return the exact shape NextAuth expects
+            // Return the User with additional NextAuth properties
             return {
-              id: response.data.user.id,
-              user: response.data.user,
+              ...response.data.user,
               accessToken: response.data.accessToken || "",
               refreshToken: response.data.refreshToken || "",
             };
@@ -182,10 +181,9 @@ export const authConfig: NextAuthConfig = {
           const response = await apiClient.auth.login(loginRequest);
 
           if (response.data) {
-            // Return the exact shape NextAuth expects
+            // Return the User with additional NextAuth properties
             return {
-              id: response.data.user.id,
-              user: response.data.user,
+              ...response.data.user,
               accessToken: response.data.accessToken || "",
               refreshToken: response.data.refreshToken || "",
             };
