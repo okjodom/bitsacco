@@ -7,6 +7,7 @@ const appUrl = process.env.NEXT_PUBLIC_APP_URL || ''
 
 const links: Array<{ href: string; label: string; external?: boolean }> = [
   { href: '/about', label: 'About' },
+  { href: '/whitepaper', label: 'Whitepaper' },
   { href: '/guides', label: 'Guides' },
   { href: '/blog', label: 'Blog' },
   { href: '/partners', label: 'Partners' },

@@ -46,6 +46,7 @@ const navigation: {
   ],
   resources: [
     { name: 'About', href: '/about' },
+    { name: 'Whitepaper', href: '/whitepaper' },
     { name: 'Blog', href: '/blog' },
     { name: 'Partners', href: '/partners' },
     { name: 'Media Kit', href: '/media' },
